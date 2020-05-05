@@ -1,0 +1,425 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEL BOOKING</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/800a418ff8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="navigation-bar">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand text-white" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: 1px solid white;">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Hotels</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item to-right" style="margin-right: 90px;">
+                    <a class="nav-link" data-target="#LoginForm" data-toggle="modal">Login</a>
+                  </li>
+                  <li class="nav-item to-right">
+                    <a class="nav-link" data-target="#RegisterForm" data-toggle="modal">Register</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+    </section>
+
+    <!-- LOGIN FORM -->
+
+    <div class="modal fade" id="LoginForm" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog cascading-modal" role="document">
+        <div class="modal-content">
+
+          <div class="modal-c-tabs">
+
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#cust-login" role="tab">Customer Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#hotel-login" role="tab">Hotel Login</a>
+              </li>
+            </ul>
+
+            <div class="tab-content">
+              <div class="tab-pane fade in show active" id="cust-login" role="tabpanel">
+                <div class="modal-body mb-1">
+                  <div class="md-form form-sm mb-2">
+                    <label>User ID / Email</label>
+                    <input type="email" class="form-control form-control-sm">
+                  </div>
+
+                  <div class="md-form form-sm mb-2">
+                    <label>Password</label>
+                    <input type="password" class="form-control form-control-sm">
+                  </div>
+                  <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                  <div class="mt-2">
+                    <button class="btn btn-info">Log in</button>
+                  </div>
+                </div>
+                <div class="modal-footer" style="justify-content: flex-start;">
+                  <div class="mt-1">
+                    <p>Don't have an account yet? Register Now (<a href="#">Customer</a> / <a href="#">Hotel</a>) </p>
+                    
+                  </div>
+                  <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                </div>
+
+              </div>
+              <div class="tab-pane fade" id="hotel-login" role="tabpanel">
+                <div class="modal-body mb-1">
+                  <div class="md-form form-sm mb-2">
+                    <label>User ID / Email</label>
+                    <input type="email" class="form-control form-control-sm">
+                  </div>
+
+                  <div class="md-form form-sm mb-2">
+                    <label>Password</label>
+                    <input type="password" class="form-control form-control-sm">
+                  </div>
+                  <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                  <div class="mt-2">
+                    <button class="btn btn-info">Log in</button>
+                  </div>
+                </div>
+                <div class="modal-footer" style="justify-content: flex-start;">
+                  <div class="mt-1">
+                    <p>Don't have an account yet? Register Now (<a href="#">Customer</a> / <a href="#">Hotel</a>) </p>
+                    
+                  </div>
+                  <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REGISTER FORM -->
+
+    <div class="modal fade" id="RegisterForm" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog cascading-modal" role="document">
+        <div class="modal-content">
+    
+          <div class="modal-c-tabs">
+    
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#cust-register" role="tab">CUSTOMER REGISTER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#hotel-register" role="tab">HOTEL REGISTER</a>
+              </li>
+            </ul>
+    
+            <div class="tab-content">
+              <div class="tab-pane fade in show active" id="cust-register" role="tabpanel">
+                <div class="modal-body mb-1">
+
+                  <form>
+                    <div class="row">
+                      <div class="col-6">
+                        <label>First Name</label>
+                          <input type="text" class="form-control form-control-sm">
+                      </div>
+                      <div class="col-6">
+                        <label>Last Name</label>
+                          <input type="text" class="form-control form-control-sm">
+                      </div>
+                      <div class="col-12">
+                        <label>Email Address</label>
+                          <input type="email" class="form-control form-control-sm">
+                      </div>
+                      <div class="col-12">
+                        <label>Password</label>
+                          <input type="email" class="form-control form-control-sm">
+                      </div>
+                      <div class="col-12">
+                        <label>Confrim Password</label>
+                          <input type="email" class="form-control form-control-sm">
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <button class="btn btn-info" type="submit">Register</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer" style="justify-content: flex-start;">
+                  <div class="mt-1">
+                    <p>Already a member? Login here (<a href="#">Customer</a> / <a href="#">Hotel</a>) </p>
+                  </div>
+                  <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                </div>
+    
+              </div>
+              <div class="tab-pane fade" id="hotel-register" role="tabpanel">
+                <div class="modal-body mb-1">
+                  <form>
+                    <div class="row">
+                      <div class="col-6">
+                        <label>First Name</label>
+                          <input type="text" class="form-control form-control-sm">
+                      </div>
+                      <div class="col-6">
+                        <label>Last Name</label>
+                          <input type="text" class="form-control form-control-sm">
+                      </div>
+                      <div class="col-12">
+                        <label>Email Address</label>
+                          <input type="email" class="form-control form-control-sm">
+                      </div>
+                      <div class="col-12">
+                        <label>Password</label>
+                          <input type="email" class="form-control form-control-sm">
+                      </div>
+                      <div class="col-12">
+                        <label>Confrim Password</label>
+                          <input type="email" class="form-control form-control-sm">
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <button class="btn btn-info" type="submit">Register</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer" style="justify-content: flex-start;">
+                  <div class="mt-1">
+                    <p>Already a member? Login here (<a href="#">Customer</a> / <a href="#">Hotel</a>)</p>
+                    
+                  </div>
+                  <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="m-4 forms">
+      <div class="container">
+        <select class="browser-default custom-select">
+          <option selected>State</option>
+          <option value="1">Delhi</option>
+          <option value="2">Mumbai</option>
+          <option value="3">Goa</option>
+        </select>
+        <select class="browser-default custom-select">
+          <option selected>Available Date</option>
+            <!-- a date picker can be added here -->
+        </select>
+        <form class="form-inline" id="search-box">
+          <input class="form-control form-control-sm" type="text" placeholder="Search">
+          <i class="fas fa-search" aria-hidden="true"></i> 
+          
+        </form>
+      </div>
+    </section>
+
+    <section class="m-2 hotel-cards">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12 card-item">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="hotel-name">Hotel Name</h4><br>
+                <strong class="loc">Location</strong><br><br>
+                <img class="img-fluid ml-1 hotel-logo" src="./hotel.png" alt=""><br>
+                <strong>Available Date</strong>
+                <strong class="price">Start @ ₹2500 /-</strong>
+              </div>
+              <div class="booking-link">
+                <a href="#"><h4>BOOK NOW</h4><i class="fas fa-arrow-circle-right fa-lg ml-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 card-item">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="hotel-name">Hotel Name</h4><br>
+                <strong class="loc">Location</strong><br><br>
+                <img class="img-fluid ml-1 hotel-logo" src="./hotel.png" alt=""><br>
+                <strong>Available Date</strong>
+                <strong class="price">Start @ ₹2500 /-</strong>
+              </div>
+              <div class="booking-link">
+                <a href="#"><h4>BOOK NOW</h4><i class="fas fa-arrow-circle-right fa-lg ml-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 card-item">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="hotel-name">Hotel Name</h4><br>
+                <strong class="loc">Location</strong><br><br>
+                <img class="img-fluid ml-1 hotel-logo" src="./hotel.png" alt=""><br>
+                <strong>Available Date</strong>
+                <strong class="price">Start @ ₹2500 /-</strong>
+              </div>
+              <div class="booking-link">
+                <a href="#"><h4>BOOK NOW</h4><i class="fas fa-arrow-circle-right fa-lg ml-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 card-item">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="hotel-name">Hotel Name</h4><br>
+                <strong class="loc">Location</strong><br><br>
+                <img class="img-fluid ml-1 hotel-logo" src="./hotel.png" alt=""><br>
+                <strong>Available Date</strong>
+                <strong class="price">Start @ ₹2500 /-</strong>
+              </div>
+              <div class="booking-link">
+                <a href="#"><h4>BOOK NOW</h4><i class="fas fa-arrow-circle-right fa-lg ml-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 card-item">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="hotel-name">Hotel Name</h4><br>
+                <strong class="loc">Location</strong><br><br>
+                <img class="img-fluid ml-1 hotel-logo" src="./hotel.png" alt=""><br>
+                <strong>Available Date</strong>
+                <strong class="price">Start @ ₹2500 /-</strong>
+              </div>
+              <div class="booking-link">
+                <a href="#"><h4>BOOK NOW</h4><i class="fas fa-arrow-circle-right fa-lg ml-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 card-item">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="hotel-name">Hotel Name</h4><br>
+                <strong class="loc">Location</strong><br><br>
+                <img class="img-fluid ml-1 hotel-logo" src="./hotel.png" alt=""><br>
+                <strong>Available Date</strong>
+                <strong class="price">Start @ ₹2500 /-</strong>
+              </div>
+              <div class="booking-link">
+                <a href="#"><h4>BOOK NOW</h4><i class="fas fa-arrow-circle-right fa-lg ml-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 card-item">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="hotel-name">Hotel Name</h4><br>
+                <strong class="loc">Location</strong><br><br>
+                <img class="img-fluid ml-1 hotel-logo" src="./hotel.png" alt=""><br>
+                <strong>Available Date</strong>
+                <strong class="price">Start @ ₹2500 /-</strong>
+              </div>
+              <div class="booking-link">
+                <a href="#"><h4>BOOK NOW</h4><i class="fas fa-arrow-circle-right fa-lg ml-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 card-item">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="hotel-name">Hotel Name</h4><br>
+                <strong class="loc">Location</strong><br><br>
+                <img class="img-fluid ml-1 hotel-logo" src="./hotel.png" alt=""><br>
+                <strong>Available Date</strong>
+                <strong class="price">Start @ ₹2500 /-</strong>
+              </div>
+              <div class="booking-link">
+                <a href="#"><h4>BOOK NOW</h4><i class="fas fa-arrow-circle-right fa-lg ml-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 card-item">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="hotel-name">Hotel Name</h4><br>
+                <strong class="loc">Location</strong><br><br>
+                <img class="img-fluid ml-1 hotel-logo" src="./hotel.png" alt=""><br>
+                <strong>Available Date</strong>
+                <strong class="price">Start @ ₹2500 /-</strong>
+              </div>
+              <div class="booking-link">
+                <a href="#"><h4>BOOK NOW</h4><i class="fas fa-arrow-circle-right fa-lg ml-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 card-item">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="hotel-name">Hotel Name</h4><br>
+                <strong class="loc">Location</strong><br><br>
+                <img class="img-fluid ml-1 hotel-logo" src="./hotel.png" alt=""><br>
+                <strong>Available Date</strong>
+                <strong class="price">Start @ ₹2500 /-</strong>
+              </div>
+              <div class="booking-link">
+                <a href="#"><h4>BOOK NOW</h4><i class="fas fa-arrow-circle-right fa-lg ml-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 card-item">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="hotel-name">Hotel Name</h4><br>
+                <strong class="loc">Location</strong><br><br>
+                <img class="img-fluid ml-1 hotel-logo" src="./hotel.png" alt=""><br>
+                <strong>Available Date</strong>
+                <strong class="price">Start @ ₹2500 /-</strong>
+              </div>
+              <div class="booking-link">
+                <a href="#"><h4>BOOK NOW</h4><i class="fas fa-arrow-circle-right fa-lg ml-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 card-item">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="hotel-name">Hotel Name</h4><br>
+                <strong class="loc">Location</strong><br><br>
+                <img class="img-fluid ml-1 hotel-logo" src="./hotel.png" alt=""><br>
+                <strong>Available Date</strong>
+                <strong class="price">Start @ ₹2500 /-</strong>
+              </div>
+              <div class="booking-link">
+                <a href="#"><h4>BOOK NOW</h4><i class="fas fa-arrow-circle-right fa-lg ml-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h4 {
+    display: inline-block;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+body > section.navigation-bar > nav {
+    background-color: #004675;
+}
+
+
+#navbarSupportedContent > ul > li > a {
+    color: white;
+}
+
+#navbarSupportedContent > ul > li {
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+}
+
+@media(min-width: 768px){
+    #navbarSupportedContent > ul > li.to-right {
+        position: absolute;
+        right: 50px;
+    }
+}
+
+body > section.forms > div > select {
+    width: 150px;
+}
+
+body > section.forms > div > form {
+    display: inline-block;
+    width: 200px;
+}
+
+
+strong.loc {
+    position: absolute;
+}
+
+img.hotel-logo {
+    width: 120px;
+    position: absolute;
+    right: 25px;
+    top: 0;
+}
+
+strong.price {
+    position: absolute;
+    right: 18px;
+}
+
+
+div.booking-link {
+    background-color: #004675;
+    height: 47px;
+    text-align: center;
+    padding: 8px;
+}
+
+div.booking-link > a {
+    color: white;
+} 
+
+div.card-item {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+
